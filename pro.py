@@ -11,3 +11,5 @@ data={
 }
 df=pd.DataFrame(data)
 print(df)
+total_sales=df['sales'].sum()
+print('total_sales:',total_sales)
