@@ -50,8 +50,9 @@ df14=df['student'].index[1:5]
 print(df14)
 df15=df['weight'].idxmax()
 print(df15)
-df16=df['score'].index[0:3]
+df16=df['weight'].index[0:5]
 print(df16)
+
 
 
 
