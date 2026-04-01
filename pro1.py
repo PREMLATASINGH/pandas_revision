@@ -52,6 +52,8 @@ df15=df['weight'].idxmax()
 print(df15)
 df16=df['weight'].index[0:5]
 print(df16)
+df17=df.sort_values(by='student').head(5)
+print(df17)
 
 
 
