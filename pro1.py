@@ -31,6 +31,6 @@ df5=df['weight']>5
 print(df5)
 df6=df['student']=='raja'
 print(df6)
-df7=(df['score']>80)|(df['weight']>5)
+df7=(df['score']>80)|((df['weight']>5)&(df['student']=='rani'))
 print(df7)
 
