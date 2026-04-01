@@ -40,5 +40,7 @@ df9=df['weight'].sort_values(ascending=True)
 print(df9)
 df10=df['score'].sort_values(ascending=True)
 print(df10)
+df11=df['student'].unique()
+print(df11)
 
 
