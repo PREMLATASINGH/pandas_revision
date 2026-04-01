@@ -33,4 +33,6 @@ df4=df.groupby(['region','category'])['total_sales'].sum()
 print(df4)
 df5=df['total_sales'].sort_values(ascending=True)
 print(df5)
+df6=df['total_sales'].count()
+print(df6)
 
