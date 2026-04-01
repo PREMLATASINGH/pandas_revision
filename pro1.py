@@ -48,7 +48,7 @@ df13=df['weight'].unique()
 print(df13)
 df14=df['student'].index[1:5]
 print(df14)
-df15=df['score'].idxmin()
+df15=df['weight'].idxmin()
 print(df15)
 
 
