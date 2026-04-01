@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 data={
     'student':['raj','rani','ranu','raja','adu','uday'],
-    'score':[70,80,87,67,99,99]
+    'score':[70,80,87,67,99,99],
+    'weight':[5,4.11,5,6,6,5.9]
 }
 df=pd.DataFrame(data)
 print(df)
