@@ -44,5 +44,7 @@ df11=df['student'].unique()
 print(df11)
 df12=df['score'].unique()
 print(df12)
+df13=df['weight'].unique()
+print(df13)
 
 
