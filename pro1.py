@@ -34,6 +34,6 @@ print(df6)
 df7=(df['score']>80)|((df['weight']>5)&(df['student']=='rani'))
 print(df7)
 print(type(df))
-df8=df['student'].sort_values()
+df8=df['student'].sort_values(ascending=False)
 print(df8)
 
