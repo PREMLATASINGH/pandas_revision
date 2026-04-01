@@ -48,6 +48,8 @@ df13=df['weight'].unique()
 print(df13)
 df14=df['student'].index[1:5]
 print(df14)
+df15=df['score'].idxmax()
+print(df15)
 
 
 
