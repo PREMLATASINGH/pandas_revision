@@ -25,3 +25,5 @@ df2=df.groupby('weight')['score'].sum()
 print(df2)
 df3=df.groupby('student')['score'].idxmax()
 print(df3)
+df4=df['score']>80
+print(df4)
