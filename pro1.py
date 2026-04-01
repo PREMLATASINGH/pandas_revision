@@ -38,6 +38,7 @@ df8=df['student'].sort_values(ascending=True)
 print(df8)
 df9=df['weight'].sort_values(ascending=True)
 print(df9)
-df10=df['score'].sort_values(ascending=False)
+df10=df['score'].sort_values(ascending=True)
 print(df10)
+
 
