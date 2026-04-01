@@ -29,4 +29,6 @@ df4=df['score']>80
 print(df4)
 df5=df['weight']>5
 print(df5)
+df6=df['student']=='raja'
+print(df6)
 
