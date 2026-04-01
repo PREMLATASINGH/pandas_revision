@@ -35,6 +35,6 @@ df5=df['total_sales'].sort_values(ascending=True)
 print(df5)
 df6=df['product'].unique()
 print(df6)
-df7=df.sort_values(by='total_sales').head(5)
+df7=df.sort_values(by='total_sales').head()
 print(df7)
 
