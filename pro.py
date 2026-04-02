@@ -37,6 +37,6 @@ df6=df['product'].unique()
 print(df6)
 df7=df.sort_values(by='product').head(5)
 print(df7)
-df8=df.sort_values(by='region').index[0:4]
+df8=df.sort_values(by='product').index[0:4]
 print(df8)
 
