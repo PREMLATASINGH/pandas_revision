@@ -62,3 +62,4 @@ df10=pd.DataFrame({
     'discount':[0.1,0.2,0.15,0.05,0.25]
 })
 print(df.merge(df10, on='product'))
+print(df.merge(df10, on='product', how='left'))
