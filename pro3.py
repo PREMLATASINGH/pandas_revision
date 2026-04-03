@@ -29,3 +29,5 @@ df['annual_salary']=df['salary']*12
 print(df)
 df5=df['department'].sort_values(ascending=True)
 print(df5)
+df6=df.groupby('department')['annual_salary'].sum()
+print(df6)
