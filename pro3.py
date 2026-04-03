@@ -49,3 +49,8 @@ print(df['annual_salary'].min())
 print(df['annual_salary'].max())
 df['salary_level']=df['annual_salary'].apply(lambda x: 'High' if x > 600000 else 'Low')
 print(df)
+df10=pd.DataFrame({
+    'department':['HR','IT','Finance'],
+    'budget':[200000,300000,250000]
+})
+print(df.merge(df10, on='department'))
