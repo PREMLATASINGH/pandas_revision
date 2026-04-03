@@ -55,3 +55,4 @@ df10=pd.DataFrame({
 })
 print(df.merge(df10, on='department'))
 print(df.merge(df10, on='department', how='left'))
+print(df.merge(df10, on='department', how='right'))
