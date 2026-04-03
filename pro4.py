@@ -33,3 +33,12 @@ df7=df.groupby('product')['total_sales'].mean()
 print(df7)
 df8=df.sort_values(by='total_sales', ascending=True).tail(2)
 print(df8)
+df9=pd.pivot_table(
+    df,
+    values='total_sales',
+    index='region',
+    columns='product',
+    aggfunc='sum'
+)
+print(df9)
+
