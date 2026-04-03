@@ -43,3 +43,11 @@ df7=df.sort_values(by='total_sales', ascending=False).head(5)
 print(df7)
 df8=df.sort_values(by='total_sales', ascending=True).tail(3)
 print(df8)
+df9=pd.pivot_table(
+    df,
+    values='total_sales',
+    index='region',
+    columns='category',
+    aggfunc='sum'   
+)
+print(df9)
