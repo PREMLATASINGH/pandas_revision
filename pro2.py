@@ -63,3 +63,4 @@ df10=pd.DataFrame({
 })
 print(df.merge(df10, on='product'))
 print(df.merge(df10, on='product', how='left'))
+print(df.merge(df10, on='product', how='right'))
