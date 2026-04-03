@@ -54,3 +54,4 @@ df10=pd.DataFrame({
     'budget':[200000,300000,250000]
 })
 print(df.merge(df10, on='department'))
+print(df.merge(df10, on='department', how='left'))
