@@ -1,0 +1,11 @@
+import pandas as pd
+Data={
+    'order_id':[1,2,3,4,5,5],
+    'product':['laptop','phone,tablet','laptop','phone'],
+    'region':['east','west','east','south','west','west'],
+    'quantity':[1,2,1,3,2,2],
+    'price':[1200,800,1200,500,300,300],
+    'sales':[1000,500,'none',1200,600,600],
+    }
+df=pd.DataFrame(Data)
+print(df)
