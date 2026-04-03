@@ -19,3 +19,5 @@ print(df.fillna(df['sales'].mean(), inplace=True))
 df2=df.copy()
 df2['tax']=df2['sales']*0.1
 print(df2)
+df['total_sales']=df['price']*df['quantity']
+print(df)
