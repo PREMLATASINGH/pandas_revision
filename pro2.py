@@ -33,3 +33,5 @@ df=df.drop_duplicates(subset='date')
 print(df)
 df['price']=df['price'].fillna(df['price'].mean())
 print(df)
+df4=df[df["price"]>500]
+print(df4)
