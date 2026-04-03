@@ -43,3 +43,4 @@ df9=pd.pivot_table(
     aggfunc='sum'
 )
 print(df9)
+print(df['annual_salary'].sum())
