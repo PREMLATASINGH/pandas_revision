@@ -31,3 +31,5 @@ df['total_sales']=df['price']*df['quantity']
 print(df)
 df=df.drop_duplicates(subset='date')
 print(df)
+df['price']=df['price'].fillna(df['price'].mean())
+print(df)
