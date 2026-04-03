@@ -35,3 +35,5 @@ df['price']=df['price'].fillna(df['price'].mean())
 print(df)
 df4=df[df["price"]>500]
 print(df4)
+df5=df[(df['region']=='east') & (df['price']>500)]
+print(df5)
