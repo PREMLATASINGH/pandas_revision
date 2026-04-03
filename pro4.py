@@ -14,3 +14,5 @@ print(df.tail())
 print(df.info())
 print(df.isnull().sum())
 print(df.drop_duplicates('order_id'))
+print(df.drop_duplicates('product'))
+
