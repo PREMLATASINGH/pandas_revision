@@ -35,3 +35,11 @@ df7=df.sort_values(by='annual_salary', ascending=False).head(3)
 print(df7)
 df8=df.sort_values(by='annual_salary', ascending=True).tail(2)
 print(df8)
+df9=pd.pivot_table(
+    df,
+    values='annual_salary',
+    index='department',
+    columns='name',
+    aggfunc='sum'
+)
+print(df9)
