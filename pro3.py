@@ -25,3 +25,5 @@ df3=df['salary'].sort_values(ascending=False)
 print(df3)
 df4=df['department'].value_counts()
 print(df4)
+df['annual_salary']=df['salary']*12
+print(df)
