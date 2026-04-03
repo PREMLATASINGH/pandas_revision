@@ -57,3 +57,8 @@ print(df['total_sales'].min())
 print(df['total_sales'].max())
 df['high_sales']=df['total_sales'].apply(lambda x: 'High' if x > 1000 else 'Low' )
 print(df)
+df10=pd.DataFrame({
+    'product':['laptop','phone','chair','table','airpot'],
+    'discount':[0.1,0.2,0.15,0.05,0.25]
+})
+print(df.merge(df10, on='product'))
