@@ -41,4 +41,6 @@ df9=pd.pivot_table(
     aggfunc='sum'
 )
 print(df9)
+merged_df=pd.merge(df, df2[['order_id','tax']], on='order_id', how='left')
+print(merged_df)
 
