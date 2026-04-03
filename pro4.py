@@ -25,3 +25,5 @@ df3=df[df['total_sales']>1000]
 print(df3)
 df4=df[(df['region']=='east') & (df['total_sales']>1000)]
 print(df4)
+df5=df.groupby('region')['total_sales'].sum()
+print(df5)
