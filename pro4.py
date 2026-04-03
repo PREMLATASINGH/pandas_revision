@@ -21,3 +21,5 @@ df2['tax']=df2['sales']*0.1
 print(df2)
 df['total_sales']=df['price']*df['quantity']
 print(df)
+df3=df[df['total_sales']>1000]
+print(df3)
