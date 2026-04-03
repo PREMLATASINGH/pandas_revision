@@ -16,4 +16,6 @@ print(df.isnull().sum())
 print(df.drop_duplicates('order_id'))
 print(df.drop_duplicates('product'))
 print(df.fillna(df['sales'].mean(), inplace=True))
-
+df2=df.copy()
+df2['tax']=df2['sales']*0.1
+print(df2)
