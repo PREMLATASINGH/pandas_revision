@@ -45,4 +45,6 @@ merged_df=pd.merge(df, df2[['order_id','tax']], on='order_id', how='outer')
 print(merged_df)
 df10=df.groupby('region')['total_sales'].sum().reset_index()
 print(df10)
+df11=df.groupby('product')['total_sales'].mean().reset_index()
+print(df11)
 
