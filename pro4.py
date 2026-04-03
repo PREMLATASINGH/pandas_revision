@@ -47,4 +47,5 @@ df10=df.groupby('region')['total_sales'].sum().reset_index()
 print(df10)
 df11=df.groupby('product')['total_sales'].mean().reset_index()
 print(df11)
-
+df12=df['total_sales'].mean()
+print(df12)
