@@ -27,3 +27,7 @@ df3=df['price'].sort_values(ascending=True)
 print(df3)
 df4=df.groupby('product')['sales'].sum()
 print(df4)
+df['total_sales']=df['price']*df['quantity']
+print(df)
+df=df.drop_duplicates(subset='date')
+print(df)
