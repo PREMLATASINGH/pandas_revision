@@ -43,4 +43,6 @@ df9=pd.pivot_table(
 print(df9)
 merged_df=pd.merge(df, df2[['order_id','tax']], on='order_id', how='outer')
 print(merged_df)
+df10=df.groupby('region')['total_sales'].sum().reset_index()
+print(df10)
 
