@@ -52,3 +52,4 @@ df9=pd.pivot_table(
 )
 print(df9)
 print(df['total_sales'].sum())
+print(df['total_sales'].mean())
