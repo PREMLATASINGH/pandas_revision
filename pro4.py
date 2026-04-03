@@ -9,3 +9,4 @@ Data={
     }
 df=pd.DataFrame(Data)
 print(df)
+print(df.head())
