@@ -44,3 +44,4 @@ df9=pd.pivot_table(
 )
 print(df9)
 print(df['annual_salary'].sum())
+print(df['annual_salary'].mean())
