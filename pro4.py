@@ -10,3 +10,5 @@ Data={
 df=pd.DataFrame(Data)
 print(df)
 print(df.head())
+print(df.tail())
+print(df.info())
