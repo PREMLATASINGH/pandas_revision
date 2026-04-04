@@ -61,3 +61,5 @@ df4=df[(df['experience']>3) & (df['bonus']>6000)]
 print(df4)
 df5=df.loc[df['experience']>3, ['emp_name','department','bonus']]
 print(df5)
+df6=df.groupby('department')['bonus'].sum()
+print(df6)
