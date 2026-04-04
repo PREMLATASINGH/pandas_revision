@@ -9,3 +9,4 @@ Data={'emp_name':["A","B","C","D","E","F","G","H","I","J"],
 df=pd.DataFrame(Data)
 print(df)
 print(df.head())
+print(df.tail())
