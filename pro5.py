@@ -30,3 +30,4 @@ high_salary=df[df['salary']>55000]
 print(high_salary)
 low_salary=df[df['salary']<55000]
 print(low_salary)
+print(df.groupby('department')['salary'].mean())
