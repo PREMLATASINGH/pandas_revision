@@ -73,3 +73,5 @@ merge_df=pd.merge(df, df9, on='department', suffixes=('_emp','_dept'), how='oute
 print(merge_df)
 df10=df.groupby('department')['salary'].agg(['mean','sum','max','min'])
 print(df10)
+df11=df.groupby('department')['experience'].agg(['mean','sum','max','min'])
+print(df11)
