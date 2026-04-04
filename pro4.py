@@ -54,3 +54,4 @@ print(df13)
 df14=df[df['total_sales']<df12] 
 print(df14)
 print(df['total_sales'].describe())
+print(df['total_sales'].value_counts())
