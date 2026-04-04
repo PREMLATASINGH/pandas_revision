@@ -26,3 +26,5 @@ print(df.fillna(df['salary'].max()))
 print(df.fillna(df['salary'].min()))
 df['bonus']=df['salary']*0.1
 print(df)
+high_salary=df[df['salary']>55000]
+print(high_salary)
