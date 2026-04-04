@@ -24,3 +24,5 @@ print(df.fillna(df['salary'].median()))
 print(df.fillna(df['salary'].sum()))
 print(df.fillna(df['salary'].max()))
 print(df.fillna(df['salary'].min()))
+df['bonus']=df['salary']*0.1
+print(df)
