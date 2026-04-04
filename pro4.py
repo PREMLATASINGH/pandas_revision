@@ -51,3 +51,5 @@ df12=df['total_sales'].mean()
 print(df12)
 df13=df[df['total_sales']>df12]
 print(df13)
+df14=df[df['total_sales']<df12] 
+print(df14)
