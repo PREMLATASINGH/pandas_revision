@@ -63,3 +63,5 @@ df5=df.loc[df['experience']>3, ['emp_name','department','bonus']]
 print(df5)
 df6=df.groupby('department')['bonus'].sum()
 print(df6)
+df7=df.groupby('department')['bonus'].mean()
+print(df7)
