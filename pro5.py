@@ -53,3 +53,5 @@ print(df['bonus'].max())
 print(df['bonus'].mean())
 print(df['bonus'].median())
 print(df['bonus'].std())
+df2=df[df['experience']>3]
+print(df2)
