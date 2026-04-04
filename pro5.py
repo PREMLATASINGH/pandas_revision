@@ -55,3 +55,5 @@ print(df['bonus'].median())
 print(df['bonus'].std())
 df2=df[df['experience']>3]
 print(df2)
+df3=df[df['bonus']>6000]
+print(df3)
