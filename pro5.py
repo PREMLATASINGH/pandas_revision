@@ -16,3 +16,5 @@ print(df['department'].value_counts())
 df1=df.drop_duplicates('emp_name')
 print(df1)
 print(df.describe())
+df.loc[2,'salary']=np.nan
+print(df)
