@@ -57,3 +57,5 @@ df2=df[df['experience']>3]
 print(df2)
 df3=df[df['bonus']>6000]
 print(df3)
+df4=df[(df['experience']>3) & (df['bonus']>6000)]
+print(df4)
