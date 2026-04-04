@@ -20,3 +20,4 @@ df.loc[2,'salary']=np.nan
 print(df)
 print(df.isnull().sum())
 print(df.fillna(df['salary'].mean()))
+print(df.fillna(df['salary'].median()))
