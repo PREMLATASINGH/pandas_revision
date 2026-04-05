@@ -22,5 +22,7 @@ pivot=pd.pivot_table(df,values='sales',index='region',columns='product',aggfunc=
 print(pivot)
 pivot.loc['North','A']=500
 print(pivot)
+pivot.loc['All','A']=pivot['A'].sum()
+print(pivot)
 
 
