@@ -28,5 +28,7 @@ pivot.iloc[0,0]=600
 print(pivot)
 pivot.iloc[-1,-1]=pivot.iloc[:-1,:-1].sum().sum()
 print(pivot)
+pivot.loc['All','All']=pivot.iloc[:-1,:-1].sum().sum()
+print(pivot)
 
 
