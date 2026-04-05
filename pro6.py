@@ -45,4 +45,5 @@ merged_df=pd.concat([df,df1], ignore_index=True)
 print(merged_df)
 print(df1.merge(df, on='customer_id', how='inner'))
 print(df1.merge(df,on='age',how='inner'))
+print(df1.merge(df,on='gender',how='inner'))
 
