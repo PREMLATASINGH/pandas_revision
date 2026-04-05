@@ -46,4 +46,5 @@ print(merged_df)
 print(df1.merge(df, on='customer_id', how='inner'))
 print(df1.merge(df,on='age',how='inner'))
 print(df1.merge(df,on='gender',how='left'))
-
+df2=pd.pivot_table(df, values='purchase_amount', index='gender',)
+print(df2)
