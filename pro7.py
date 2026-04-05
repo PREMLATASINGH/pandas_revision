@@ -24,5 +24,7 @@ pivot.loc['North','A']=500
 print(pivot)
 pivot.loc['All','A']=pivot['A'].sum()
 print(pivot)
+pivot.iloc[0,0]=600
+print(pivot)
 
 
