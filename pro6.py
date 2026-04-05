@@ -41,4 +41,6 @@ df1=pd.DataFrame({'customer_id':[11,12],
                   'purchase_date':['2024-01-11','2024-01-12']
 })
 print(df1)
+merged_df=pd.concat([df,df1], ignore_index=True)
+print(merged_df)
 
