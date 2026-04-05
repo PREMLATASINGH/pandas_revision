@@ -33,3 +33,12 @@ print(df.sort_values(by='age', ascending=True))
 print(df.sort_values(by='age', ascending=False))
 print(df['purchase_amount'].describe())
 print(df['age'].dropna().describe())
+df1=pd.DataFrame({'customer_id':[11,12],
+                  'customer_name':['Karl','Liam'],
+                  'age':[28,32],
+                  'gender':['M','M'],
+                  'purchase_amount':[200,300],
+                  'purchase_date':['2024-01-11','2024-01-12']
+})
+print(df1)
+
