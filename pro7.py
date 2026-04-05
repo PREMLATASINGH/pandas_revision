@@ -7,3 +7,4 @@ data={
 df=pd.DataFrame(data)
 print(df)
 print(df.groupby('region')['sales'].sum())
+print(df.groupby('region')['sales'].mean())
