@@ -43,4 +43,5 @@ df1=pd.DataFrame({'customer_id':[11,12],
 print(df1)
 merged_df=pd.concat([df,df1], ignore_index=True)
 print(merged_df)
+print(df1.merge(df, on='customer_id', how='inner'))
 
