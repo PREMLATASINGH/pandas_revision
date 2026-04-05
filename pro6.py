@@ -52,3 +52,4 @@ print(df.pivot_table(values='purchase_amount', index='gender', columns='age', ag
 df3=df.groupby('customer_name')['purchase_amount'].mean().reset_index()
 print(np.array(df3))
 print(df3.values)
+print(df3.max())
