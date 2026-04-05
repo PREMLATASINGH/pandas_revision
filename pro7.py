@@ -18,5 +18,7 @@ pivot=pd.pivot_table(df,values='sales',index='region',aggfunc=['sum','mean','med
 print(pivot)
 pivot=pd.pivot_table(df,values='sales',index='region',columns='product',aggfunc='sum',fill_value=0)
 print(pivot)
+pivot=pd.pivot_table(df,values='sales',index='region',columns='product',aggfunc='sum',fill_value=0,margins=True)
+print(pivot)
 
 
