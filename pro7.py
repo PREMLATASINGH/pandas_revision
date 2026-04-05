@@ -41,6 +41,11 @@ plt.xlabel('Region')
 plt.ylabel('Sales of Product A')
 plt.title('Sales of Product A by Region')
 plt.show()
+plt.plot(pivot.index[:-1],pivot['A'][:-1])
+plt.xlabel('Region')
+plt.ylabel('Sales of Product A')
+plt.title('Sales of Product A by Region')
+plt.show()
 
 
 
