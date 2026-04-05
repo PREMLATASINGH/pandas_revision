@@ -13,3 +13,4 @@ pivot=pd.pivot_table(df,values='sales',index='region',columns='product',aggfunc=
 print(pivot)
 print(pivot.fillna(0))
 print(pivot.fillna(pivot.mean()))
+print(pivot.fillna(pivot.median()))
