@@ -16,7 +16,5 @@ print(pivot.fillna(pivot.mean()))
 print(pivot.fillna(pivot.median()))
 pivot=pd.pivot_table(df,values='sales',index='region',aggfunc=['sum','mean','median'])
 print(pivot)
-print(pivot['sum'])
-print(pivot['mean'])
-print(pivot['median'])
-print(pivot.sort_values(by='sum', ascending=False))
+
+
