@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 data={
     'region':['North','South','East','West','North','South','East','West'],
     'sales':[100,150,200,250,300,350,400,450],
@@ -30,5 +31,11 @@ pivot.iloc[-1,-1]=pivot.iloc[:-1,:-1].sum().sum()
 print(pivot)
 pivot.loc['All','All']=pivot.iloc[:-1,:-1].sum().sum()
 print(pivot)
+plt.bar(pivot.index[:-1],pivot['A'][:-1])
+plt.xlabel('Region')
+plt.ylabel('Sales of Product A')
+plt.title('Sales of Product A by Region')
+plt.show()
+
 
 
