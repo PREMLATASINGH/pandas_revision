@@ -17,3 +17,5 @@ print(df.info())
 df.loc[2,'sales']=np.nan
 print(df)
 print(df.isnull())
+df1=df['sales'].fillna(df['sales'].mean(),inplace=True)
+print(df1)
