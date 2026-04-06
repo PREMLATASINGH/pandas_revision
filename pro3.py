@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 data={
     'employee_id':[1,2,3,4,5],
     'name':['Alice','Bob','Charlie','David','Eve'],
@@ -63,3 +64,8 @@ print(df.groupby('department')['annual_salary'].min().reset_index())
 print(df.groupby('department')['annual_salary'].max().reset_index())
 print(df.sort_values(by='name', ascending=False).head(3))
 print(df.sort_values(by='name', ascending=True).tail(2))
+plt.bar(df['department'], df['annual_salary'])
+plt.xlabel('Department')
+plt.ylabel('Annual Salary')
+plt.title('Annual Salary by Department')
+plt.show()
