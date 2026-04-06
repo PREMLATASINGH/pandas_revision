@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 Data={
     'order_id':[1,2,3,4,5,5],
     'product':['laptop','phone','tablet','laptop','phone','phone'],
@@ -58,3 +60,5 @@ print(df['total_sales'].value_counts())
 print(df['total_sales'].unique())
 print(df['total_sales'].nunique())
 print(df['total_sales'].min())
+df.loc[2,'total_sales']=np.nan
+print(df)
