@@ -21,3 +21,5 @@ df1=df['sales'].fillna(df['sales'].mean(),inplace=True)
 print(df1)
 df=df.drop_duplicates()
 print(df)
+df['revenue']=df['sales']+df['profit']
+print(df)
