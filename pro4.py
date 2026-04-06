@@ -63,3 +63,4 @@ print(df['total_sales'].min())
 df.loc[2,'total_sales']=np.nan
 print(df)
 print(df.isnull())
+print(df.fillna(0))
