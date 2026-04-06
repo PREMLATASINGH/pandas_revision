@@ -14,3 +14,5 @@ print(df.head())
 print(df.tail())
 print(df.describe())
 print(df.info())
+df.loc[2,'sales']=np.nan
+print(df)
