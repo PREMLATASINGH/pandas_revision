@@ -42,3 +42,8 @@ pivot=df.pivot_table(values='sales',index='region',columns='product',aggfunc='su
 print(pivot)
 merged_df=pd.merge(df,pivot,on='region',how='left')
 print(merged_df)
+plt.bar(df['region'],df['sales'])
+plt.xlabel('Region')
+plt.ylabel('Sales')
+plt.title('Sales by Region')
+plt.show()
