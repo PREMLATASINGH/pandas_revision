@@ -62,3 +62,4 @@ print(df['total_sales'].nunique())
 print(df['total_sales'].min())
 df.loc[2,'total_sales']=np.nan
 print(df)
+print(df.isnull())
