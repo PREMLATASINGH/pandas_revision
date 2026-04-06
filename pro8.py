@@ -29,3 +29,5 @@ high_sales=df[df['sales']>200]
 print(high_sales)
 df_sorted=df.sort_values(by='sales',ascending=False)
 print(df_sorted)
+region_sales=df.groupby('region')['sales'].sum()
+print(region_sales)
