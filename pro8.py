@@ -16,3 +16,4 @@ print(df.describe())
 print(df.info())
 df.loc[2,'sales']=np.nan
 print(df)
+print(df.isnull())
