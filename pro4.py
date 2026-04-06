@@ -64,3 +64,8 @@ df.loc[2,'total_sales']=np.nan
 print(df)
 print(df.isnull())
 print(df.fillna(0))
+plt.plot(df['order_id'],df['total_sales'])
+plt.xlabel('Order ID')
+plt.ylabel('Total Sales')
+plt.title('Total Sales by Order ID')
+plt.show()
