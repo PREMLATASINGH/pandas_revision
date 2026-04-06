@@ -23,3 +23,5 @@ df=df.drop_duplicates()
 print(df)
 df['revenue']=df['sales']+df['profit']
 print(df)
+df['profit_level']=df['profit'].apply(lambda x:'High' if x>30 else 'Low')
+print(df)
