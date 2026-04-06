@@ -25,3 +25,5 @@ df['revenue']=df['sales']+df['profit']
 print(df)
 df['profit_level']=df['profit'].apply(lambda x:'High' if x>30 else 'Low')
 print(df)
+high_sales=df[df['sales']>200]
+print(high_sales)
