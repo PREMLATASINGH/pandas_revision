@@ -15,3 +15,4 @@ print(df.describe())
 print(df.info())
 df.loc[5,'salary']=np.nan
 print(df)
+print(df.dropna())
