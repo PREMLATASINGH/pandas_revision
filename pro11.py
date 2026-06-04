@@ -16,3 +16,4 @@ df.loc[5,'salary']=np.nan
 print(df)
 print(df.dropna())
 print(df.isnull().sum())
+print(df.fillna(df['salary'].mean()))
