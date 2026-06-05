@@ -4,3 +4,4 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 df=pd.read_csv('netflix_titles.csv')
 print(df.head())
+print(df.info())
