@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 df=pd.read_csv('netflix_titles.csv')
 print(df.head())
@@ -15,3 +16,13 @@ print(df['release_year'].unique())
 print(df.groupby('release_year')['type'].count())
 print(df.sort_values('release_year', ascending=False).head(10))
 print(df[df['release_year'] > 2010])
+plt.hist(df['release_year'].dropna(), bins=20)
+plt.xlabel('Release Year')
+plt.ylabel('Frequency')
+plt.title('Distribution of Release Years')
+plt.show()
+plt.plot(df['release_year'], df['type'].apply(lambda x: 1 if x == 'Movie' else 0), 'o')
+plt.xlabel('Release Year')
+plt.ylabel('Type (1=Movie, 0=TV Show)')
+plt.title('Release Year vs Type')
+plt.show()
