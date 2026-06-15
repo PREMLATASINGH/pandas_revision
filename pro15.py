@@ -73,3 +73,5 @@ df = pd.DataFrame(rows, columns=[
 
 df.to_csv("customer_sales_5000.csv", index=False)
 print("Dataset created: customer_sales_5000.csv")
+df=pd.read_csv("customer_sales_5000.csv")
+print(df.head())
