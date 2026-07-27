@@ -26,3 +26,5 @@ print(df[df['department'] == 'engineering'])
 print(df[df['department'] == 'marketing'])
 print(df[df['department'] == 'hr'])
 print(df[df['department'] == 'finance'])
+df['new_salary'] = df['salary'] * 1.1
+print(df.head())
