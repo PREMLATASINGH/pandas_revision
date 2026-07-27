@@ -29,3 +29,6 @@ print(df[df['department'] == 'finance'])
 df['new_salary'] = df['salary'] * 1.1
 print(df.head())
 print(df[df['new_salary'] > 100000])
+print(df[df['new_salary'] < 50000])
+df['salary_range'] = pd.cut(df['salary'], bins=[0, 50000, 100000, 150000, 200000], labels=['0-50k', '50k-100k', '100k-150k', '150k-200k'])
+print(df['salary_range'].value_counts())
