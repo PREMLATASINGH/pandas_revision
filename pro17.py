@@ -28,3 +28,4 @@ print(df[df['department'] == 'hr'])
 print(df[df['department'] == 'finance'])
 df['new_salary'] = df['salary'] * 1.1
 print(df.head())
+print(df[df['new_salary'] > 100000])
