@@ -34,3 +34,4 @@ df['salary_range'] = pd.cut(df['salary'], bins=[0, 50000, 100000, 150000, 200000
 print(df['salary_range'].value_counts())
 print(df['new_salary'].unique())
 print(df['new_salary'].nunique())   
+print(df['new_salary'].value_counts())
