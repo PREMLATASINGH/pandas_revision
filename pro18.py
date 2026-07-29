@@ -4,3 +4,4 @@ import matplotlib.pyplot as plt
 df=pd.read_csv('fact_sales.csv')
 print(df.head())
 print(df.info())
+print(df.describe())
