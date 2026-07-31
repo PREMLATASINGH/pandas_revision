@@ -18,5 +18,6 @@ print(df['price'].isnull().sum())
 print(df.isnull().sum())
 print(df.duplicated().sum())
 print(df.fillna(0, inplace=True))
+print(df.isnull().sum())
 
 
