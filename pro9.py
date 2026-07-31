@@ -20,5 +20,6 @@ print(df.duplicated().sum())
 print(df.fillna(0, inplace=True))
 print(df.isnull().sum())
 print(df.groupby('category')['price'].mean())
+print(df.groupby('category')['stock'].sum())
 
 
