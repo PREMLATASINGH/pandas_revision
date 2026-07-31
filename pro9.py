@@ -16,5 +16,6 @@ print(df.dropna())
 print(df.fillna(df['price'].mean()))
 print(df['price'].isnull().sum())
 print(df.isnull().sum())
+print(df.duplicated().sum())
 
 
