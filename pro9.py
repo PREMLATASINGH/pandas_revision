@@ -23,5 +23,6 @@ print(df.groupby('category')['price'].mean())
 print(df.groupby('category')['stock'].sum())
 print(df.sort_index(ascending=False))
 print(df.sort_values(by='price', ascending=True))
+print(df.sort_values(by=['category','price'], ascending=[True,False]))
 
 
