@@ -31,4 +31,5 @@ print(df.describe())
 print(df.info())
 print(df['release_date'].max())
 print(df['release_date'].min())
+print(df['release_date'].unique())
 
