@@ -27,4 +27,5 @@ print(df.sort_values(by=['category','price'], ascending=[True,False]))
 print(df[df['price']>500])
 print(df.columns)
 print(df.index)
+print(df.describe())
 
