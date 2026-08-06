@@ -28,4 +28,5 @@ print(df[df['price']>500])
 print(df.columns)
 print(df.index)
 print(df.describe())
+print(df.info())
 
