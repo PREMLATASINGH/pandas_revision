@@ -29,4 +29,5 @@ print(df.columns)
 print(df.index)
 print(df.describe())
 print(df.info())
+print(df['release_date'].max())
 
