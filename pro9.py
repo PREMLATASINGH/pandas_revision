@@ -35,4 +35,4 @@ print(df['release_date'].unique())
 print(df['release_date'].nunique())
 print(df['release_date'].value_counts())
 print(df['release_date'].value_counts(normalize=True))
-
+print(df['release_date'].value_counts().head(3))
