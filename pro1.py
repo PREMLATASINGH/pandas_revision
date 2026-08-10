@@ -58,6 +58,7 @@ print(df.sort_values(by='weight',ascending=False).head(5))
 print(df.sort_values(by='score',ascending=True).head(5))
 print(df.groupby('student')['score'].sum())
 print(df.groupby('student')['weight'].mean())
+print(df.groupby('student')['score'].max())
 
 
 
