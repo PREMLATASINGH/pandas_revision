@@ -55,6 +55,7 @@ print(df16)
 df17=df.sort_values(by='weight').head(5)
 print(df17)
 print(df.sort_values(by='weight',ascending=False).head(5))
+print(df.sort_values(by='score',ascending=True).head(5))
 
 
 
