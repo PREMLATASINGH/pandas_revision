@@ -61,6 +61,7 @@ print(df.groupby('student')['weight'].mean())
 print(df.groupby('student')['score'].max())
 print(df.groupby('student')['weight'].min())
 print(df.groupby('student')['score'].count())
+print(df.groupby('student')['weight'].std())
 
 
 
